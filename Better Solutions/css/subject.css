@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+}
+body{
+    background:whitesmoke;
+}
+
+
+header {
+    background: rgb(199, 212, 236);
+    background: linear-gradient(135deg, rgba(199, 212, 236, 1) 0%, rgba(150, 189, 208, 1) 29%, rgba(172, 194, 213, 1) 48%, rgba(164, 206, 226, 1) 69%, rgba(199, 212, 236, 1) 94%);
+    height: 22vh;
+    width: 100%;
+
+}
+
+#headercontainer {
+    color: #212529d1;
+    padding-top:1%;
+    padding-left:2%;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 3vh;
+}
+
+.navbar {
+    width: 98%;
+    margin: 1%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    margin-inline-end: 1%;
+    background-color: #d83865;
+    color: white;
+    text-decoration: none;
+    font-size: 2.2vh;
+    height: 4.6vh;
+    border: transparent;
+    border-radius: 0.2em;
+}
+
+.mbutton {
+    display: none;
+}
+
+.button a {
+    padding: 1vh;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.logo {
+    float: right;
+    position: relative;
+    top: -26vh;
+    right: 5vw;
+}
+
+#logo {
+    width: 13vw;
+    position: relative;
+    top: 0vh;
+    right: 0vw;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2%;
+}
+
+.grid-container {
+    width: 77%;
+    display: grid;
+    column-gap: 20px;
+    height: 82%;
+    row-gap: 20px;
+    grid-template-columns: 1fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid-container a
+{
+    text-decoration: none;
+    overflow: hidden; 
+}
+
+.grid-container a div{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5rem; 
+    font-weight: 800;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(0.5px);
+    width: 100%;
+    height: 100%;
+    text-shadow:1px 2px 5px black;
+
+}
+
+
+
+.grid-item {
+    border-radius: 0.3em;
+    border: solid 0px rgb(11, 27, 56);
+    box-shadow: 2px 2px 8px  rgba(0, 0, 0, 0.548) , -2px 0px 8px rgba(0, 0, 0, 0.548) ;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.item1 {
+    background-image: url(https://images.unsplash.com/photo-1600492515568-8868f609511e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=950&q=80);
+    background-size: 100%;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    
+}
+
+.item2 {
+    background-image: url(https://images.unsplash.com/photo-1518226203301-8e7f833c6a94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    grid-column: 3;
+    grid-row: 1 /span 2;
+}
+
+
+
+.item3 {
+    background-image: url(https://img.freepik.com/free-photo/writing-prescription-medicine-laboratory-testing-analyzing-virus-taking-important-notes-scientific-s_424947-1598.jpg?size=626&ext=jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+ 
+}
+
+.item4 {
+    background-image: url(https://static01.nyt.com/images/2019/12/17/books/review/17fatbooks/17fatbooks-superJumbo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+
+@media screen and (max-width: 1040px) {
+  
+    .logo {
+        float: right;
+        position: relative;
+        top: -12vh;
+        right: 6vw;
+    }
+    #logo {
+     
+        width: 17vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 9vh;
+    }
+    #headercontainer {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+   
+    #bbutton-pc {
+        display: none;
+    }
+    .mbutton {
+        display: inline;
+    }
+    #logo {
+        width: 21vw;
+        position: relative;
+        top: 0vh;
+        right: 0vw;
+    }
+    .logo {
+        float: right;
+        position: relative;
+        top: -7vh;
+        right: 6vw;
+        overflow: inherit;
+    }
+    
+    .button1 {
+        background-color: #9ab5e500;
+        border: none;
+        margin-inline-start: 2%;
+        margin-top: 5%;
+        font-size: 2.4vh;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+    .button1 a:hover {
+        color: white;
+        -ms-transform: scale(1.7);
+        /* IE 9 */
+        -webkit-transform: scale(1.7);
+        /* Safari 3-8 */
+        transform: scale(1.7)
+    }
+    .button1 a {
+        font-size: 1.4em;
+        text-decoration: none;
+        color: #1b3762;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+    .main{
+        position: inherit;
+    height: auto;
+    margin-top: 22%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.7fr 2fr 1.4fr 1.4fr;
+        grid-gap: 10px;
+        height: 450px;
+    
+    }
+
+    .grid-container a div{
+        font-size: 2rem; 
+    }
+    .item1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .item2{
+        grid-row: 2;
+        grid-column: 1;
+    }
+.item3{
+    grid-row: 3;
+    grid-column: 1;
+}
+.item4{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+
+}
